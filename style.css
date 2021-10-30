@@ -25,12 +25,22 @@ div{
 }
 
 h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
     color: white;
-    font-size: 3em;
-    background-color: var(--cor1);
+    font-size: 4em;
     padding: 5px 15px;
+    border-radius: 3px;
+
+    background-image: linear-gradient(to bottom right, var(--cor0), var(--cor3));
+    background-size: 200% 200%;
+    animation: movingGradient 3s linear infinite alternate;
+
+}
+
+@keyframes movingGradient {
+    from {background-position: 0 0;}
+    to {background-position: 100% 100%;}
 }
 
 .container{
@@ -71,6 +81,7 @@ section h2{
 
 .section3{
     background-color: var(--cor4);
+    
 
 }
 .section4{
@@ -115,5 +126,7 @@ section h2{
 }
 .pimg1{
     background-image: url(imagens/imagem1.jpeg);
- } 
+    
+} 
+
 
