@@ -10,12 +10,17 @@
     --cor2: #993B26;
     --cor3: #E55939;
     --cor4: #616F11;
-       
+    
+    --font-principal: 'Sus Sans', sans-serif;
+}
+ 
+body{
+    background-color: grey;
 }
 
 div{
     width: 100%;
-    height: 658px;
+    height: 100vh;
 
     background-position: center;
     background-size: cover; 
@@ -25,12 +30,12 @@ div{
 }
 
 h1{
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-    color: white;
-    font-size: 4em;
+    font-family: var(--font-principal);
+    font-weight: 500;
+    color: aliceblue;
+    font-size: 5em;
     padding: 5px 15px;
-    border-radius: 3px;
+    border-radius: 0px;
 
     background-image: linear-gradient(to bottom right, var(--cor0), var(--cor3));
     background-size: 200% 200%;
@@ -44,15 +49,13 @@ h1{
 }
 
 .container{
-    position: relative;
-    width: 100%;
-    height: 658px; 
+    position: relative; 
 }
 .box{
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-right: -50%;  
+     
     transform: translate(-50%, -50%); 
     
       
